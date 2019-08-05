@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+   <data>
+
+        <record id="view_location_form_inherit" model="ir.ui.view">
+           <field name="name">Inventory Location Custom</field>
+           <field name="model">stock.location</field>
+           <field name="inherit_id" ref="stock.view_location_form"/>
+           <field name="arch" type="xml">
+               <field name="posz" position="after">
+                       <field name="row"/>
+                       <field name="column"/>
+                       <field name="depth"/>
+               </field>
+           </field>
+       </record>
+   </data>
+</odoo>
